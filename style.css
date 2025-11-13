@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2eee8;
+    font-family: "Ibarra Real Nova", Georgia, "Times New Roman", serif;
+    line-height: 1.5;
+    color: #33312c;
+}
+
+.top-nav {
+    background-color: #f7f1e7;
+    border-bottom: 1px solid #d6c8b1;
+    padding: 12px 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+}
+
+.top-nav a {
+    display: inline-block;
+    margin: 0 18px;
+    font-family: "Playfair Display", serif;
+    font-size: 17px;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #6b5740;
+}
+.top-nav a.current {
+    border-bottom: 2px solid #b6955f;
+    padding-bottom: 3px;
+}
+.page {
+    max-width: 850px;
+    margin: 40px auto 60px;
+    background-color: #fdfaf5;
+    border: 1px solid #e1d4c0;
+    border-radius: 8px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.8);
+    padding: 40px 55px 50px;
+}
+.chapter-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.book-title {
+    font-family: "Playfair Display", serif;
+    font-size: 34px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0 0 4px;
+    color: #374754;
+}
+.chapter-label {
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin: 8px 0 0;
+    color: #a07c4b;
+}
+.chapter-title {
+    font-family: "Playfair Display", serif;
+    font-size: 26px;
+    margin: 6px 0 10px;
+    color: #374754;
+}
+
+.chapter-header::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 1px;
+    margin: 16px auto 0;
+    background: linear-gradient(to right, transparent, #b6955f, transparent);
+}
+
+.chapter-content p {
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+.chapter-content a {
+    color: #7b4f2e;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(123, 79, 46, 0.4);
+}
+
+.chapter-content a:hover {
+    border-bottom-color: rgba(123, 79, 46, 0.9);
+}
+
+.poem {
+    max-width: 24rem;
+    margin: 2rem auto;
+    font-style: italic;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.mouse-tail {
+    font-style: italic;
+    font-family: "Ibarra Real Nova", serif;
+    white-space: pre;
+    text-align: left;
+    margin: 2rem auto;
+}
+.chapter-content {
+    font-size: 18px;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.chapter-illustration {
+    float: left;
+    max-width: 260px;
+    margin: 0 2rem 1.5rem 0;
+    border-radius: 4px;
+    border: 1px solid #d5c6b3;
+}
+
+.chapter-content::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+@media (max-width: 700px) {
+    .chapter-illustration {
+        float: none;
+        display: block;
+        margin: 0 auto 1.5rem;
+        max-width: 100%;
+    }
+}
+.home-image {
+    display: block;
+    max-width: 80%;
+    margin: 2rem auto;
+    border: 1px solid #d5c6b3;
+    border-radius: 4px;
+}
+.site-footer{
+    max-width: 850px;
+    margin: 0 auto 40px;
+    padding: 20px 40px 10px;
+    font-size: 0.9rem;
+    color: #6b5740;
+}
+
+.site-footer a {
+    color: #7b4f2e;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(123, 79, 46, 0.4)
+}
+
+.site-footer a:hover{
+    border-bottom-color: rgba(123, 79, 46,0.9)
+}
+
+.botom-nav{
+    margin-top: 8px;
+    text-align: center;
+}
+
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
